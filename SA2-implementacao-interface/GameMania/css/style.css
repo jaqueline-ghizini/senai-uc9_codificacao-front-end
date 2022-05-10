@@ -1,0 +1,827 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container-grid{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content:space-between;
+}
+
+/*MENU ----------------------------------------------------------------*/
+header{
+    height: 142px;
+}
+
+/*menu de cima*/
+.barra_menu_cima{
+    height:105px; 
+    width: 100%; 
+    overflow:hidden; 
+    background-color:#2D2A2A; 
+    display: flex;
+    padding: 0% 5% 0% 5%;
+    justify-content:space-between;
+    align-items: center;
+}
+
+/*logomarca*/
+.logo {
+    float: left;
+    padding: 0px, 1px; 
+    width: 20%; 
+    height: 105px;
+    display: flex; 
+    align-items: center;
+    justify-content: left;
+}
+
+.logo_marca{
+    height:100%
+}
+.logo_tipo{
+    width: 100%;
+}
+#logo_tipo_um{
+    display: flex;
+}
+#logo_tipo_dois{
+    display: none;
+}
+
+/*campo de busca*/
+.busca_produto_um{
+    height:40px; 
+    width:30%; 
+    padding: 6px;
+    position:initial;
+    background-color:white;   
+    border-radius: 5px; 
+}
+
+.campo_busca{ 
+    border: 0px; 
+    width: 85% ; 
+    font-size:17px; 
+    font-family: 'Roboto',sans-serif;
+    font-weight: bold;
+}
+.lupa_busca{
+    width: 20px; 
+    float:right;
+}
+
+.busca_produto_um input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+.busca_produto_dois input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+.busca_produto_dois{
+    height: 37px; 
+    width:100%; 
+    position:initial; 
+    background-color:white;   
+    border-radius: 5px; 
+    text-align: center;
+    justify-content:center;
+    display: none;
+}
+
+/*carrinho de produto*/
+.carrinho_user{
+    width: 10%;
+    display: flex;
+}
+.carrinho_compras{  
+    margin-top:2px; 
+    margin-right: 3%; 
+    width: 30%; 
+    height:26px;
+}
+
+.carrinho_compras img{
+    height: 100%;
+}
+.carrinho_menu{
+    display: none;
+}
+
+.usuario{ 
+    float: right;
+    margin-left: 4%;
+    width: 30%; 
+    height:30px;
+}
+
+.usuario img{ 
+    height: 100%;
+}
+.usuario_menu{
+    display: none;
+}
+
+
+.hamburger_menu {
+    width: 30px;
+    float: right;
+    display: none;
+}
+ 
+/*menu de baixo*/
+
+.menu{
+    padding: 0% 6%;
+    width:100%;
+    height: 37px; 
+    align-items:center; 
+    justify-content:space-between; 
+    display: flex; 
+    background-color:#F6F6F6; 
+    box-shadow: 0px 0px 5px 0px black; 
+}
+
+.menu a{
+    font-family:'Odibee Sans', sans-serif; 
+    font-size: 23px; 
+    text-transform: uppercase; 
+    text-decoration: none;
+    color:black;
+}
+
+
+/*dropdown de acessórios-------*/
+.dropdown-container {
+    display: flex;
+    align-items: center;
+}
+
+header nav div{
+    padding: 0 1em;
+    font-size: 1.1rem;
+    font-weight:200;
+}
+
+.dropdown-items{
+    display: none;
+    flex-direction: column;
+    position:absolute;
+    top: 130px;
+    z-index: 4;
+    background-color:#F6F6F6; 
+    box-shadow: 0px 0px 5px 0px black; 
+                            
+}
+.dropdown-items ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdown-items ul li {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+.dropdown-menu li{
+    font-family: 'Odibee Sans', sans-serif; 
+    font-size: 18px; 
+    text-transform: uppercase; 
+    text-decoration: none;
+    color:black;
+}
+
+.menu_acessorios_ativado{
+    display: flex;
+}
+.menu_acessorios_desativado {
+    display: none;
+}
+
+/*BANNER CAROUSEL ------------------------------------ --------------------*/
+.fundo_carousel{
+    width: 100%;
+    height: 50%;
+    padding: 6%;
+    background: conic-gradient(from 137.94deg at 50% 50%, rgba(2, 6, 38, 0.864583) -170.62deg, #020414 18.75deg, rgba(2, 6, 38, 0.864583) 189.38deg, #020414 378.75deg);
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+}
+
+/*DESTAQUES-----------------------------------------------------------------*/
+.secao-destaques {
+    background-color: #E5E5E5;
+    padding: 3% 5%;
+    font-family: 'Odibee Sans', sans-serif; 
+}
+.secao-destaques .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.secao-destaques h2 {
+    color: #C00000;
+    font-size: 30px;
+}
+
+.btn-destaques{
+    background-color: #C00000;
+}
+
+/*NOVIDADES-----------------------------------------------------------------*/
+.secao-novidades {
+    background-color: #E5E5E5;
+    padding: 30px ;
+    font-family: 'Odibee Sans', sans-serif; 
+}
+
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.secao-novidades .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.secao-novidades h2 {
+    color: #008000;
+    font-size: 30px;
+}
+
+/*PRODUTOS de novidades e destaques*/
+.glider-css{
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    display:flex;
+    overflow:hidden;
+}
+
+.bloco-produto {
+    width: 100%;
+    height: 90%;
+    justify-content: center;
+   display: flex;
+   margin: 0% 5%;
+}
+
+.content-produto {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.produto {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 3% 2.2% 3% 2.2%;
+}
+
+.cardproduto {
+    width: 220px;
+    height: 340px;
+    color: #fff;
+    background: var(--gradient);
+    box-shadow:  1px 1px 4px black;
+    background: #2D2A2A;
+    border-radius: 4px;
+    margin-bottom: 6%;
+}
+
+.img_produto{
+    width: 86%;
+    margin: 7%;
+    height: 190px;
+    object-fit:contain;
+    background-color: white; 
+    border-radius: 2px;
+}
+
+  .cardproduto h3 {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    font-size: 23px;
+    
+    text-transform: capitalize;
+  }
+
+  .cardproduto h4 {
+    padding-left: 20px;
+    font-size: 17px;
+    color: #fff;
+
+  }
+  
+  .cardproduto p {
+    padding-right: 20px;
+    float: right;
+    margin-bottom: 7%;
+    font-size: 15px;
+    color: #625E5E;
+  }
+
+  .botao{
+    height: 43px;
+    width: 220px;
+    box-shadow:  1px 1px 4px black;
+    border-radius: 4px;
+    padding: 5%;
+    justify-content: center;
+    display: flex;
+    font-size: 18px;
+    color: #FFF;
+  }
+
+  .btn-novidades{
+    background: #109A16;
+  }
+
+  .content-produto a{
+    text-transform: uppercase; 
+    text-decoration: none;
+    font-family: 'Odibee Sans', sans-serif; 
+  }
+
+  /*para o click da seta*/
+  .desaparecer{
+      display: none;
+  }
+  .aparecer{
+      display: flex;
+  }
+
+  .seta-destaques{
+    display: flex;
+    position:static;
+    width: 45px;
+  }
+  .seta-novidades{
+      display: flex;
+      position:static;
+      width: 45px;
+  }
+  #botao-seta-esquerda{
+    top:50%;
+    position:static;
+    width: 2%;
+    margin: 0% 2% 0% -3%;
+  }
+  #botao-seta-direita{
+    top:50%;
+    position:static;
+    width: 2%;
+    margin: 0% -1% 0% 0%;
+   }
+
+/*GALERIA PRODUTOS ---------------------------------------------------------*/
+
+.secao-galeria {
+    background-color: #E5E5E5;
+    padding: 30px 0;
+    font-family: 'Odibee Sans', sans-serif; 
+}
+  
+.secao-galeria .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+  
+.secao-galeria h2 {
+    color: #00008B;
+    font-size: 30px;
+}
+
+.bloco-galeria {
+    width: 100%;
+    height: 90%;
+  }
+  
+.content-galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+  
+  .cardgaleria {
+    width: 220px;
+    height: 340px;
+    color: #fff;
+    margin: 3% 2% 3% 2%;
+    background: var(--gradient);
+    box-shadow:  0px 0px 6px black;
+    background: #2D2A2A;
+    border-radius: 4px;
+  }
+
+  .img_galeria{
+      width: 86%;
+      margin: 7%;
+      height: 190px;
+      object-fit:contain;
+      background-color: white; 
+      border-radius: 2px;
+  }
+  
+  .cardgaleria h3 {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    font-size: 23px;
+    text-transform: capitalize;
+  }
+
+  .cardgaleria h4 {
+    padding-left: 20px;
+    font-size: 17px;
+    color: #fff;
+
+  }
+  
+  .cardgaleria p {
+    padding-right: 20px;
+    float: right;
+    margin-bottom: 7%;
+    font-size: 15px;
+    color: #625E5E;
+  }
+
+
+/*RODAPE-------------------------------------------------------------------*/
+footer {
+    background-color: #2D2A2A;
+    width: 100%;
+  }
+  
+  .rodape {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6%;
+  }
+
+
+  .logo-rodape {
+    width: 22%;
+    height: 178px;
+    align-items: center;
+    justify-content: center;
+    display:flex;
+    flex-direction: column;
+  }
+
+  .logo_marca_rodape{
+      width: 60%;
+  }
+
+  .logo_tipo_rodape{
+      width: 70%;
+      margin-top: -6%;
+  }
+
+  .logo-rodape p{
+      font-size: 18px;
+      font-family: 'Odibee Sans', sans-serif;
+      color: #5E5E5E;
+      text-align: center;
+  }
+  #logo-rodape-final{
+      display: none;
+  }
+
+
+  .links-informacao {
+    width: 18%;
+    height: 178px;
+    align-items: left;
+    align-content:flex-end;
+    justify-content: left;
+    flex-direction: column;
+    display: flex;
+  }
+  .links-categorias {
+    width: 18%;
+    height: 178px;
+    align-items: left;
+    justify-content: left;
+    flex-direction: column;
+    display: flex;
+  }
+  
+  .links h2 {
+    color: white;
+    text-decoration: none;
+    font-size: 19px;
+    font-family: 'Odibee Sans', sans-serif;
+  }
+  .links a{
+    color: #939393;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: 'Odibee Sans', sans-serif;
+    flex-direction: column;
+  }
+
+  .links p{
+      margin: 0px;
+  }
+
+
+  .final-rodape{
+      width: 26%;
+  }
+  .sociais {
+    display: flex;
+    width: 100%;
+    align-items: left;
+    justify-content: left;
+    flex-direction: column;
+    height: 178px;
+  }
+  .sociais a {
+    margin: 3%;
+    color: #939393;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: 'Odibee Sans', sans-serif;
+    flex-direction: row;
+  }
+  
+  .img_sociais{
+      width: 25px;
+      margin-right: 10px;
+  }
+  
+/*responsivo para celular*/
+@media screen and (max-width: 428px) {
+    /*MENU ----------------------------------------------------------------*/
+    .barra_menu_cima{
+        height:90px; 
+        justify-content: space-between;
+    }
+    
+    .logo{
+        height: 90px;
+        width: 60%;
+    }
+    .logo_tipo{
+        width:  130%;
+    }
+
+    /*carrinho de compra*/
+    .carrinho_user{
+        width: 10%;
+        justify-content:right;
+    }
+    .carrinho_compras{
+        display: none;
+    }
+    .usuario{
+        display: none;
+    }
+
+    /*menu hamburger ---------*/
+    .hamburger_menu {
+        display: inline-block;
+    }
+    #menu {
+        width: 120px;
+        height: 400px;
+
+    }
+    #menu a {
+        text-align: center;
+        padding: 12px;
+    }
+    
+    .carrinho_menu{
+        display: flex;
+    }
+    .usuario_menu{
+        display: flex;
+    }
+
+
+    /*BANNER CAROUSEL---------------------------------- --------------------*/
+    .fundo_carousel{
+        top:90px;
+        padding: 0%;
+    }
+}
+
+
+@media screen and (max-width: 519px) {
+    .rodape{
+        flex-direction: column;
+    }
+    .logo-rodape{
+        width: 80%;  
+    }
+    .links-informacao{
+        width: 80%;
+    }
+    .links-categorias{
+        width: 80%;
+    }
+    .sociais{
+        width: 80%;
+    }
+   
+    #logo-rodape-final{
+        display: flex;
+    }
+    .final-rodape{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+}
+@media screen and (max-width: 595px) {
+     /*DEESTAQUES-----------------------------------------------------------*/
+     #dest_produto2{
+        display: none;
+    }
+
+}
+
+/*responsivo para tablet*/
+@media screen and (max-width: 744px) {
+    /*MENU ----------------------------------------------------------------*/
+    header{
+        height:95px;
+    }
+    .barra_menu_cima{
+        height:95px; 
+        box-shadow: 0px 0px 6px 0px black; 
+    }
+    
+    /*logogarca*/
+    #logo_tipo_um{
+        display: none;
+    }
+    #logo_tipo_dois{
+        display: flex;
+        height: 70%;
+        
+    }
+    .logo{
+        width: 35%;
+    }
+
+    /*busca*/
+    .busca_produto_um{
+        display: none;
+    }
+    .busca_produto_dois{
+        display: flex;
+    }
+
+    /*carrinho e usuário*/
+    .carrinho_user{
+        width: 22%;
+    }
+    .carrinho_compras img{   
+        height:26px;
+    }
+    .usuario img{ 
+        height:28px;
+    }
+
+
+
+    /*menu hamburger----------------------*/
+    .hamburger_menu {
+        display: inline-block;
+        margin-left: 5%;
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        width: 150px;
+        height: 300px;
+        position:absolute;
+        top: 100px;
+        right: 0%;
+        z-index: 4;
+       /* background-color:#2D2A2A;*/ 
+       box-shadow: 0px 0px 5px 0px black; 
+    }
+
+    
+    .dropdown-items{
+        flex-direction: row-reverse;
+        top: auto;                        
+    }
+
+
+    .menu a {
+        text-align: center;
+        padding: 12px;
+    }
+    
+    .menu-ativo {
+        display: flex;
+    }
+
+    .posicionamento-header {
+       position: relative;
+    }
+
+    
+}
+
+@media screen and (max-width: 870px) {
+    /*DEESTAQUES-----------------------------------------------------------*/
+    #dest_produto3{
+        display: none;
+    }
+
+     /*RODAPE----------------------------------------------------------*/
+   
+    .rodape{
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+       }
+       .logo-rodape{
+           width: 40%;   
+           height: 21%; 
+           margin: 2.5% ;
+       }
+       .links-informacao{
+           height: 23%;
+           width: 40%;
+           flex-direction: column;
+           margin: 2%;
+       }
+       .links-categorias{
+           height: 23%;
+           width: 40%;
+           margin: 2%;
+       }
+       .sociais{
+           height: 50%;
+           width: 50%;
+           margin: 2.5%;
+       }
+       #logo-rodape-final{
+           display: flex;
+       }
+       #logo-rodape-inicial{
+           display: none;
+       }
+       .final-rodape{
+        width: 100%;
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+}
+
+@media screen and (max-width: 1169px) {
+    /*DEESTAQUES-----------------------------------------------------------*/
+    #dest_produto4{
+        display: none;
+    }
+}
+
+/*responsivo para desktop menor*/
+@media screen and (max-width: 1180px) {
+    /*MENU ----------------------------------------------------------------------*/
+    header{
+        height: 137px;
+    }
+    .barra_menu_cima{
+        height:100px; 
+    }
+
+   
+}
