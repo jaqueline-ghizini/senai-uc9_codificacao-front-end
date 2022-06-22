@@ -11,4 +11,4 @@ Contém os arquivos e os links do figma com o rafe e o protótipo do projeto.
 Contém o projeto final dessa matéria de implementação de interface, que se encontra na pasta GameMania.
 
 * SA3-aplicacao-frameworks <br>
-Contém a implementação de framework no projeto da pasta anterior e mais novas versões.
+Contém a implementação do framework Angular no projeto e mais novas versões.
