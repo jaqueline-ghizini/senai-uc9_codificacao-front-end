@@ -10,6 +10,9 @@ import { HomeComponent } from './views/home/home.component';
 import { FooterComponent } from './views/footer/footer.component';
 import { LoginComponent } from './views/login/login.component';
 
+import { FormsModule } from '@angular/forms';/*formulario*/
+import {MatButtonModule} from '@angular/material/button';/*botao formulario*/
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +25,9 @@ import { LoginComponent } from './views/login/login.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    CarouselModule /*carousel*/
+    CarouselModule, /*carousel*/
+    FormsModule, /*formulario */
+    MatButtonModule /*botao formulario*/
   ],
   providers: [],
   bootstrap: [AppComponent]

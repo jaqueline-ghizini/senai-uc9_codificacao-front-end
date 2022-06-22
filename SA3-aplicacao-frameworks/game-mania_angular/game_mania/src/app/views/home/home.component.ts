@@ -8,9 +8,14 @@ import { OwlOptions } from 'ngx-owl-carousel-o';
 })
 export class HomeComponent implements OnInit {
 
+  public addCarrinho!: string;
+  public comprar!: string;
+
   constructor() { }
 
   ngOnInit(): void {
+    this.addCarrinho!= "+ Adicionar ao Carrinho";
+    this.comprar!= "+ Comprar";
   }
 
  
